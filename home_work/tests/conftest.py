@@ -3,7 +3,7 @@ import pytest
 
 @pytest.fixture()
 def fix_for_list():
-    return [i for i in range(1,11)]
+    return [i for i in range(1, 11)]
 
 
 @pytest.fixture()
