@@ -21,11 +21,11 @@ def test_dict_pop(fix_for_dict):
 
 def test_dict_items(fix_for_dict):
     '''Convert dictionary into tuple and check certain element'''
-    tuple_elbment = (7,70)
-    assert tuple_elbment ==  list(fix_for_dict.items())[7]
+    tuple_elbment = (7, 70)
+    assert tuple_elbment == list(fix_for_dict.items())[7]
 
 
-@pytest.mark.parametrize('tries', [1,2,3])
+@pytest.mark.parametrize('tries', [1, 2, 3])
 def test_dict_update(fix_for_dict, tries):
     '''Updating dictionary by adding new kay: value'''
     upd = {'year': 2020}

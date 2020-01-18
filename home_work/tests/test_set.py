@@ -23,11 +23,11 @@ def test_set_add(fix_for_set):
 def test_set_discard(fix_for_set):
     '''Checking removing a value from set'''
     fix_for_set.discard(6)
-    assert (6 not in  fix_for_set) == True
+    assert (6 not in fix_for_set) == True
 
 
-@pytest.mark.parametrize('new_values_for_set', ['o','t','u','s'])
+@pytest.mark.parametrize('new_values_for_set', ['o', 't', 'u', 's'])
 def test_set_len(fix_for_set, new_values_for_set):
     '''Checking length of set'''
     fix_for_set.add(new_values_for_set)
-    assert len(fix_for_set) == len(new_values_for_set)+10
+    assert len(fix_for_set) == len(new_values_for_set) + 10
